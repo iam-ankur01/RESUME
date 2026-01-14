@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankur Mishra Resume</title>
+    <style>
+        /* A4 Page Setup - FORCE ONE PAGE */
+        @page {
+            size: A4;
+            margin: 0; 
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.3;
+            color: #333;
+            background-color: #fff;
+            margin: 0;
+            box-sizing: border-box;
+            font-size: 9.5pt; /* Optimal size for 1 page */
+        }
+
+        .resume-container {
+            width: 210mm;
+            height: 297mm;
+            padding: 12mm 15mm; /* Balanced Margins */
+            margin: 0 auto;
+            background-color: #fff;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        /* Screen view helper */
+        @media screen {
+            body { background-color: #f0f0f0; padding: 20px; }
+            .resume-container { box-shadow: 0 0 10px rgba(0,0,0,0.1); height: auto; min-height: 297mm; }
+        }
+
+        /* Print Specifics */
+        @media print {
+            body { background-color: #fff; -webkit-print-color-adjust: exact; }
+            .resume-container { margin: 0; box-shadow: none; width: 100%; height: 100%; padding: 10mm 15mm; }
+        }
+
+        /* TIGHTER SPACING RULES */
+        header {
+            text-align: center;
+            margin-bottom: 8px; /* Reduced from 15px */
+        }
+        h1 {
+            margin: 0;
+            font-size: 22pt;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #4a76a8;
+            line-height: 1;
+        }
+        .contact-info {
+            margin-top: 3px;
+            font-size: 9pt;
+            color: #555;
+        }
+        section {
+            margin-bottom: 8px; /* Critical: Reduces space between sections */
+        }
+        h2 {
+            font-size: 11pt;
+            color: #4a76a8;
+            border-bottom: 1.5px solid #4a76a8;
+            padding-bottom: 1px;
+            margin-bottom: 4px; /* Tighter headers */
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 1px;
+        }
+        h3 {
+            font-size: 10pt;
+            margin: 0;
+            color: #000;
+            font-weight: bold;
+        }
+        .item-sub-header {
+            display: flex;
+            justify-content: space-between;
+            font-style: italic;
+            color: #333;
+            font-size: 9pt;
+            margin-bottom: 2px;
+        }
+        .date {
+            font-weight: bold;
+            color: #000;
+        }
+        .project-links {
+            font-size: 8.5pt;
+            margin-bottom: 1px;
+            color: #4a76a8;
+        }
+        .project-links a {
+            color: #4a76a8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .project-links a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            list-style-type: disc;
+            margin: 0 0 3px 18px; /* Very tight list spacing */
+            padding: 0;
+        }
+        li {
+            margin-bottom: 1px;
+            font-size: 9.5pt;
+        }
+        
+        .skills-list, .education-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .skills-list li, .education-list li {
+            margin-bottom: 1px;
+        }
+        .skills-list li::before, .education-list li::before {
+            content: "•";
+            margin-right: 6px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="resume-container">
+    <header>
+        <h1>ANKUR MISHRA</h1>
+        <div class="contact-info">
+            Narhegaon, Pune | +91 7987693299 | 001ankurmishra@gmail.com | linkedin-ankurmishra01
+        </div>
+    </header>
+
+    <section>
+        <h2>EDUCATION</h2>
+        <div class="item-header">
+            <h3>Bachelor of Engineering in Computer Engineering</h3>
+            <span style="font-style: italic;">Pune, Maharashtra</span>
+        </div>
+        <div class="item-sub-header">
+            <span>JSPM Narhe Technical campus</span>
+            <span class="date">Expected Graduation, May 2027</span>
+        </div>
+        <ul class="education-list">
+            <li><strong>Concentration:</strong> Software Engineering & Artificial Intelligence</li>
+            <li><strong>Coursework:</strong> Operating Systems, Database Management Systems</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>TECHNICAL SKILLS</h2>
+        <ul class="skills-list">
+            <li><strong>Languages:</strong> Python, Java, JavaScript, NodeJS, SQL, MongoDB</li>
+            <li><strong>Libraries & Frameworks:</strong> TensorFlow, Keras, Streamlit, Hugging Face, Numpy, Pandas, N8N, Make.ai</li>
+            <li><strong>Concepts:</strong> Data Structures & Algorithms, Machine Learning, Deep Learning, Gen AI, RAG, Fine-Tuning, LLMs</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>PROJECTS AND CERTIFICATIONS</h2>
+        
+        <div class="item-header">
+            <h3>Vision Agent – AI Image Analysis Web Application</h3>
+            <span class="date">Nov 2025</span>
+        </div>
+        <div class="project-links">
+            🔗 <a href="https://vision-agent1234.streamlit.app/" target="_blank">Live Demo</a> | 💻 <a href="https://github.com/iam-ankur01/VISION_Agent" target="_blank">Source Code</a>
+        </div>
+        <ul>
+            <li>Developed a multimodal AI system using Python, Streamlit, and Google Gemini Vision API to generate accurate, real-time image descriptions.</li>
+            <li>Built a responsive UI using Streamlit and optimized the API data handling to process images and display descriptions in real-time.</li>
+        </ul>
+
+        <div class="item-header">
+            <h3>Persona Chatbot – Custom AI Conversation</h3>
+            <span class="date">Oct 2025</span>
+        </div>
+        <div class="project-links">
+            🔗 <a href="https://aipersonchat-gvdmz9bxrt5fgausrebidy.streamlit.app/" target="_blank">Live Demo</a> | 💻 <a href="https://github.com/iam-ankur01/ai_person_chat" target="_blank">Source Code</a>
+        </div>
+        <ul>
+            <li>Developed an AI chatbot using Streamlit, GPT-2 (Hugging Face), and Python, capable of generating persona-based conversations (e.g., Bill Gates, Elon Musk, or custom characters).</li>
+            <li>Added configurable traits such as visionary, optimistic, and more to shape the chatbot’s voice and response style.</li>
+        </ul>
+
+        <div class="item-header">
+            <h3>PDF Reader (AI-based Q&A App)</h3>
+            <span class="date">Sept 2025</span>
+        </div>
+        <div class="project-links">
+            🔗 <a href="https://pdfreader-pjayww5cqktotbjehwx3gw.streamlit.app/" target="_blank">Live Demo</a> | 💻 <a href="https://github.com/iam-ankur01/pdf_reader" target="_blank">Source Code</a>
+        </div>
+        <ul>
+            <li>Developed an AI-powered PDF Reader using Python, Streamlit, and Hugging Face, enabling users to ask natural-language questions from uploaded PDFs.</li>
+            <li>Implemented semantic text chunking and embeddings (MiniLM-L6-v2) with Flan-T5 LLM for accurate, context-aware Q&A responses.</li>
+        </ul>
+
+        <div class="item-header">
+            <h3>Employee Retention & Churn Prediction System</h3>
+            <span class="date">June 2025</span>
+        </div>
+        <div class="project-links">
+            🔗 <a href="https://ann-churnprediction-deploy.streamlit.app/" target="_blank">Live Demo</a> | 💻 <a href="https://github.com/iam-ankur01/ANN-churnPrediction" target="_blank">Source Code</a>
+        </div>
+        <ul>
+            <li>Developed an Artificial Neural Network (ANN) using TensorFlow and Keras to predict employee attrition, streamlining the pipeline from EDA to model optimization.</li>
+            <li>Launched a live Streamlit dashboard to provide real-time churn risk assessments, translating raw HR data into actionable retention strategies.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>EXPERIENCE</h2>
+        <div class="item-header">
+            <h3>AI Developer Intern | Interact Development</h3>
+            <span class="date">Dec 2025</span>
+        </div>
+        <ul>
+            <li><strong>LLM Fine-Tuning:</strong> Fine-tuned open-source models on custom datasets to improve conversational accuracy and intent recognition.</li>
+            <li><strong>Model Performance:</strong> Benchmarked model response times and optimized inference parameters for lower latency in a Discord bot environment.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>ACTIVITIES AND LEADERSHIP</h2>
+        <div class="item-header">
+            <h3>Entrepreneurship Development Cell</h3>
+            <span class="date">2024-2025</span>
+        </div>
+        <div class="item-sub-header">
+            <span>Co-founder and Operation Head</span>
+        </div>
+        <ul>
+            <li>Formed a team in college to provide motivation, mentorship, and team building.</li>
+            <li>Organized sessions covering startup fundamentals including marketing, finance, and technical development.</li>
+            <li>Managed key operations in marketing initiatives that attracted over 200 participants to events.</li>
+        </ul>
+
+        <div class="item-header">
+            <h3>SMART INDIA HACKATHON</h3>
+            <span class="date">2025</span>
+        </div>
+        <ul>
+            <li>Selected from college to participate in SIH 2025, where I developed an AI for crop and yield management using historical data.</li>
+            <li>Increased accuracy by 25% through this platform, reaching over 100 users.</li>
+        </ul>
+    </section>
+</div>
+
+</body>
+</html>
